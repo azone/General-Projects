@@ -1,14 +1,7 @@
 <?php
-function micro()
-{
-  list($s, $m) = explode(" ", microtime());
-  return $s + $m;
-}
-$ts = micro();
-$ip = new IPGeo($_GET['ip']);
-print_r($ip->getInfo());
-
-echo 'Use '.(micro() - $ts).' second';
+/**
+ * Get IP infomation from hostip.info
+ */
 
 class IPGeo
 {
