@@ -17,7 +17,6 @@ imagefill($im_resized, 0, 0, $white_color);
 $old_w = imagesx($im);
 $old_h = imagesy($im);
 $old_rate = $old_w / $old_h;
-$new_rate = $w / $h;
 
 if($old_rate == $new_rate)
 {
